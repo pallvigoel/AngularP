@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+ <div class="container">
+  
+    <div class="input-container">
+    
+          <mat-form-field >
+            <input matInput type="text" [(ngModel)]="bookName" name="bookName">
+          </mat-form-field>
+          
+            <button  mat-button [routerLink]="['getBook']" (click)= onClickValue()>
+              Search</button>
+
+        </div>
+    <app-datatable [books]=parentBooks (selectBook)="booksSelected($event)" 
+    ></app-datatable>
+
+  
+  </div>
+  </body>
+
+
+  

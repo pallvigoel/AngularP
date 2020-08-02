@@ -1,0 +1,17 @@
+
+ <div class = "main-container">
+ <div class = "flex-container">
+    <mat-card class = "result-card">
+       <div>Subject</div>
+       <div>Author</div>
+       <div>description</div>
+    </mat-card>
+ </div>
+ <div class = "flex-container" *ngFor="let book of books">
+    <mat-card class = "result-card">
+       <div>{{book.title}}</div>
+       <div>{{book.author}}</div>
+       <div>{{book.id}}</div>
+    </mat-card>
+ </div>
+ </div>
